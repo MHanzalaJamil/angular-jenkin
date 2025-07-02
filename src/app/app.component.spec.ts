@@ -14,8 +14,8 @@ describe('AppComponent', () => {
         AppComponent
       ],
     }).compileComponents();
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+    fixture = TestBed.createComponent(AppComponent);
+    app = fixture.componentInstance;
   });
 
   it('should create the app', () => {
