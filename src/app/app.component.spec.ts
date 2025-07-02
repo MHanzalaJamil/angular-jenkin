@@ -30,6 +30,6 @@ describe('AppComponent', () => {
   it('should have h1 as Hello World', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('h1')?.textContent).toEqual('Hello');
+    expect(compiled.querySelector('h1')?.textContent).toEqual('Hello World');
   });
 });
