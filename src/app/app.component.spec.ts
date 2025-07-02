@@ -3,9 +3,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
     let app: AppComponent;
     let fixture: ComponentFixture<AppComponent>;
+  beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule
@@ -29,7 +29,7 @@ describe('AppComponent', () => {
 
   it('should have h1 as Hello World', () => {
     fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.queryselector('h1').textContent).toContain('Hello World');
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello World');
   });
 });
