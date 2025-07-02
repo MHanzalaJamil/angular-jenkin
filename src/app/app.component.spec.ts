@@ -26,6 +26,8 @@ describe('AppComponent', () => {
   });
 
   it('should have h1 as Hello World', () => {
-    pending();
-  })
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.queryselector('h1').textContent).toContain('Hello World');
+  });
 });
