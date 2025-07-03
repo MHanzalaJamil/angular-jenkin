@@ -7,9 +7,6 @@ describe('AppComponent', () => {
     let fixture: ComponentFixture<AppComponent>;
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
       declarations: [
         AppComponent
       ],
@@ -19,7 +16,6 @@ describe('AppComponent', () => {
   });
 
   it('should create the app', () => {
-    
     expect(app).toBeTruthy();
   });
 
