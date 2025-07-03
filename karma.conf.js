@@ -16,7 +16,7 @@ module.exports = function (config) {
     reporters: ['progress', 'junit'],
     junitReporter: {
       outputDir: 'test-results',
-      outputFile: 'test-results.xml',
+      outputFile: 'test_results.xml',
       useBrowserName: false
     },
     singleRun: true,
