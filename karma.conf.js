@@ -19,6 +19,7 @@ module.exports = function (config) {
       outputFile: 'test-results.xml',
       useBrowserName: false
     },
+    singleRun: true,
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
