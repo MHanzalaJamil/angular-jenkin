@@ -20,7 +20,7 @@ describe('AppComponent', () => {
   });
 
   it(`should have as title 'angular-jenkin'`, () => {
-    expect(app.title).toEqual('angular-jenkin');
+    expect(app.title).toEqual('/angular-jenkin/');
   });
 
   it('should have h1 as Hello World', () => {
