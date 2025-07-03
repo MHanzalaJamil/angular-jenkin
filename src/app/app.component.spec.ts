@@ -20,7 +20,7 @@ describe('AppComponent', () => {
   });
 
   it(`should have as title 'angular-jenkin'`, () => {
-    expect(app.title).toEqual('/angular-jenkin/');
+    expect(app.title).toEqual('angular-jenkin');
   });
 
   it('should have h1 as Hello World', () => {
@@ -28,7 +28,5 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('h1')?.textContent).toEqual('Hello World');
   });
-  it('should fail on purpose', () => {
-    expect(true).toBeFalse();
-  });
+  
 });
